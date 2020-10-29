@@ -10,12 +10,14 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.neosoft.es.entities.Employee;
 import com.neosoft.es.repository.EmployeeRepositoty;
 
 @RestController
+@RequestMapping("/service")
 public class EmployeeController {
 
     @Autowired
